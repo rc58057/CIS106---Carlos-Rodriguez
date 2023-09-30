@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PhotonUser"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-09-30 05:05:44 PM"/>
+        <attribute name="created" value="UGhvdG9uVXNlcjtFQzJBTUFaLUgxVUdMQVA7MjAyMy0wOS0zMDswNDo1OTowNiBQTTszMzYw"/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLUgxVUdMQVA7MjAyMy0wOS0zMDswNTowNTo0NCBQTTsxOzM0NjI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="lastname" type="String" array="False" size=""/>
+            <declare name="creditstaking" type="Integer" array="False" size=""/>
+            <declare name="tuition" type="Integer" array="False" size=""/>
+            <input variable="lastname"/>
+            <input variable="creditstaking"/>
+            <assign variable="tuition" expression="creditstaking * 250 + 100"/>
+            <output expression="&quot;Hello &quot; &amp;lastname" newline="True"/>
+            <output expression="&quot;Your Tuition is $&quot; &amp;tuition" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
