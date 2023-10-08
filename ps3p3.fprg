@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PhotonUser"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-07 09:32:12 PM"/>
+        <attribute name="created" value="UGhvdG9uVXNlcjtFQzJBTUFaLTZOVUFKM0M7MjAyMy0xMC0wNzswOTozMDoyNyBQTTszMzI5"/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLTZOVUFKM0M7MjAyMy0xMC0wNzswOTozMjoxMiBQTTsxOzM0MzM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="earned" type="Integer" array="False" size=""/>
+            <declare name="te" type="Integer" array="False" size=""/>
+            <input variable="earned"/>
+            <assign variable="te" expression="earned / 3"/>
+            <output expression="&quot;Your total earned was: &quot; &amp;te" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

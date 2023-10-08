@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PhotonUser"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-07 09:43:18 PM"/>
+        <attribute name="created" value="UGhvdG9uVXNlcjtFQzJBTUFaLTZOVUFKM0M7MjAyMy0xMC0wNzswOTozMjoxNiBQTTszMzI5"/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLTZOVUFKM0M7MjAyMy0xMC0wNzswOTo0MzoxOCBQTTsxOzM0NDE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="make" type="String" array="False" size=""/>
+            <declare name="model" type="String" array="False" size=""/>
+            <declare name="msrp" type="Real" array="False" size=""/>
+            <declare name="discountpercent" type="Real" array="False" size=""/>
+            <declare name="ao" type="Real" array="False" size=""/>
+            <declare name="dp" type="Real" array="False" size=""/>
+            <input variable="make"/>
+            <input variable="model"/>
+            <input variable="msrp"/>
+            <input variable="discountpercent"/>
+            <assign variable="ao" expression="msrp * discountpercent"/>
+            <assign variable="dp" expression="msrp - ao"/>
+            <output expression="&quot;Make: &quot; &amp;make" newline="True"/>
+            <output expression="&quot;Model: &quot; &amp;model" newline="True"/>
+            <output expression="&quot;MSRP: &quot; &amp;msrp" newline="True"/>
+            <output expression="&quot;Discount Percent: &quot; &amp;discountpercent" newline="True"/>
+            <output expression="&quot;Amount off MSRP: &quot; &amp;ao" newline="True"/>
+            <output expression="&quot;Discounted price: &quot; &amp;dp" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

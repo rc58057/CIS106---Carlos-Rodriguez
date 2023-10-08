@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PhotonUser"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-07 09:58:33 PM"/>
+        <attribute name="created" value="UGhvdG9uVXNlcjtFQzJBTUFaLTZOVUFKM0M7MjAyMy0xMC0wNzswOTo0NTowMCBQTTszMzI2"/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLTZOVUFKM0M7MjAyMy0xMC0wNzswOTo1ODozMyBQTTsxOzM0NDQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="radius" type="Integer" array="False" size=""/>
+            <declare name="pie" type="Real" array="False" size=""/>
+            <declare name="area" type="Integer" array="False" size=""/>
+            <declare name="perimeter" type="Integer" array="False" size=""/>
+            <declare name="rs" type="Integer" array="False" size=""/>
+            <assign variable="pie" expression="3.174"/>
+            <input variable="radius"/>
+            <assign variable="rs" expression="radius * radius"/>
+            <assign variable="area" expression="rs * pie"/>
+            <assign variable="perimeter" expression="2 * pie * radius"/>
+            <output expression="&quot;The Area is: &quot; &amp;area" newline="True"/>
+            <output expression="&quot;The Perimeter is: &quot; &amp;perimeter" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
