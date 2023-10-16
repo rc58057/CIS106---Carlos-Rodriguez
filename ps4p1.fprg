@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PhotonUser"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-15 06:05:41 PM"/>
+        <attribute name="created" value="UGhvdG9uVXNlcjtFQzJBTUFaLUhPMVVQRFI7MjAyMy0xMC0xNTswNTo1OTowMSBQTTszMzY4"/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLUhPMVVQRFI7MjAyMy0xMC0xNTswNjowNTo0MSBQTTsxOzM0NzI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="es1" type="Integer" array="False" size=""/>
+            <declare name="es2" type="Integer" array="False" size=""/>
+            <declare name="fes1" type="Integer" array="False" size=""/>
+            <declare name="fes2" type="Integer" array="False" size=""/>
+            <declare name="final" type="Integer" array="False" size=""/>
+            <input variable="es1"/>
+            <assign variable="fes1" expression="(es1/100) * 60"/>
+            <input variable="es2"/>
+            <assign variable="fes2" expression="(es2/100) * 40"/>
+            <assign variable="final" expression="fes1 + fes2"/>
+            <output expression="&quot;Your Total Points were&quot; &amp;final" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

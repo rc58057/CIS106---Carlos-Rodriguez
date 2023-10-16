@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PhotonUser"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-15 06:11:23 PM"/>
+        <attribute name="created" value="UGhvdG9uVXNlcjtFQzJBTUFaLUhPMVVQRFI7MjAyMy0xMC0xNTswNjowNjowMCBQTTszMzYw"/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLUhPMVVQRFI7MjAyMy0xMC0xNTswNjoxMToyMyBQTTsxOzM0Njk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="pps" type="Integer" array="False" size=""/>
+            <declare name="csp" type="Integer" array="False" size=""/>
+            <declare name="qos" type="Integer" array="False" size=""/>
+            <declare name="vos" type="Integer" array="False" size=""/>
+            <input variable="pps"/>
+            <input variable="csp"/>
+            <input variable="qos"/>
+            <assign variable="vos" expression="csp - pps * qos"/>
+            <output expression="&quot;Your Value of stock is &quot; &amp;vos" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

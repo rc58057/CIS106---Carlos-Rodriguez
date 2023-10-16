@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PhotonUser"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-16 01:05:06 PM"/>
+        <attribute name="created" value="UGhvdG9uVXNlcjtFQzJBTUFaLVJRMkNMSTU7MjAyMy0xMC0xNjsxMjozOTo0OSBQTTszMzQ0"/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLVJRMkNMSTU7MjAyMy0xMC0xNjswMTowNTowNiBQTTsxOzM0MzY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="meal" type="Integer" array="False" size=""/>
+            <declare name="tip1" type="Integer" array="False" size=""/>
+            <declare name="tip2" type="Integer" array="False" size=""/>
+            <declare name="tip3" type="Integer" array="False" size=""/>
+            <declare name="twt1" type="Integer" array="False" size=""/>
+            <declare name="twt2" type="Integer" array="False" size=""/>
+            <declare name="twt3" type="Integer" array="False" size=""/>
+            <input variable="meal"/>
+            <assign variable="tip1" expression="meal * 15 / 100"/>
+            <assign variable="twt1" expression="meal + tip1"/>
+            <assign variable="tip2" expression="meal * 18 / 100"/>
+            <assign variable="twt2" expression="meal + tip2"/>
+            <assign variable="tip3" expression="meal * 20 / 100"/>
+            <assign variable="twt3" expression="meal + tip3"/>
+            <output expression="&quot;With a 15% Tip:&quot;" newline="True"/>
+            <output expression="&quot;Total: $&quot; &amp;meal" newline="True"/>
+            <output expression="&quot;Tip: $&quot; &amp;tip1" newline="True"/>
+            <output expression="&quot;Total with Tip: $&quot; &amp;twt1" newline="True"/>
+            <output expression="&quot;with a 18% Tip:&quot;" newline="True"/>
+            <output expression="&quot;Total: $&quot; &amp;meal" newline="True"/>
+            <output expression="&quot;Tip: $&quot; &amp;tip2" newline="True"/>
+            <output expression="&quot;Totat with Tip: $&quot; &amp;twt2" newline="True"/>
+            <output expression="&quot;With a 20% Tip:&quot;" newline="True"/>
+            <output expression="&quot;Total: $&quot; &amp;meal" newline="True"/>
+            <output expression="&quot;Tip: $&quot; &amp;tip3" newline="True"/>
+            <output expression="&quot;Total with Tip: $&quot; &amp;twt3" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
