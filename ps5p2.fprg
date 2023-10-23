@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PhotonUser"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-23 12:12:07 PM"/>
+        <attribute name="created" value="UGhvdG9uVXNlcjtFQzJBTUFaLUZKRDRQU0o7MjAyMy0xMC0yMzsxMjowMDoyOCBQTTszMzQ2"/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLUZKRDRQU0o7MjAyMy0xMC0yMzsxMjoxMjowNyBQTTsxOzM0NTQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="qty" type="Real" array="False" size=""/>
+            <declare name="item" type="String" array="False" size=""/>
+            <declare name="up" type="Real" array="False" size=""/>
+            <declare name="exp" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter Quantity: &quot;" newline="True"/>
+            <input variable="qty"/>
+            <output expression="&quot;Enter Item: &quot;" newline="True"/>
+            <input variable="item"/>
+            <if expression="item = &quot;a&quot;">
+                <then>
+                    <assign variable="up" expression="10.00"/>
+                </then>
+                <else>
+                    <assign variable="item" expression="&quot;b&quot;"/>
+                    <assign variable="up" expression="20.00"/>
+                </else>
+            </if>
+            <assign variable="exp" expression="qty * up"/>
+            <output expression="&quot;Item: &quot; &amp;item" newline="True"/>
+            <output expression="&quot;Unit Price: $&quot; &amp;up" newline="True"/>
+            <output expression="&quot;Extended Price: $&quot; &amp;exp" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

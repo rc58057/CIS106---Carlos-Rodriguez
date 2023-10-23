@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PhotonUser"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-23 12:47:51 PM"/>
+        <attribute name="created" value="UGhvdG9uVXNlcjtFQzJBTUFaLUZKRDRQU0o7MjAyMy0xMC0yMzsxMjozOTo1MCBQTTszMzUz"/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLUZKRDRQU0o7MjAyMy0xMC0yMzsxMjo0Nzo1MSBQTTsxOzM0NjE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="qty" type="Real" array="False" size=""/>
+            <declare name="cost" type="Real" array="False" size=""/>
+            <declare name="ship" type="Real" array="False" size=""/>
+            <declare name="ttl" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter Number of books: &quot;" newline="True"/>
+            <input variable="qty"/>
+            <output expression="&quot;Enter cost per book: $&quot;" newline="True"/>
+            <input variable="cost"/>
+            <if expression="cost &gt; 50.01">
+                <then>
+                    <assign variable="ship" expression="0.00"/>
+                </then>
+                <else>
+                    <assign variable="ship" expression="25.00"/>
+                </else>
+            </if>
+            <assign variable="ttl" expression="qty * cost"/>
+            <output expression="&quot;Order total: $&quot; &amp;ttl" newline="True"/>
+            <output expression="&quot;Shipping cost: $&quot; &amp;ship" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PhotonUser"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-23 02:02:04 PM"/>
+        <attribute name="created" value="UGhvdG9uVXNlcjtFQzJBTUFaLTZQQk1TUkc7MjAyMy0xMC0yMzswMTo1MTo1MyBQTTszMzYw"/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLTZQQk1TUkc7MjAyMy0xMC0yMzswMjowMjowNCBQTTsxOzM0NjE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="ln" type="String" array="False" size=""/>
+            <declare name="coa" type="Real" array="False" size=""/>
+            <declare name="wc" type="Real" array="False" size=""/>
+            <declare name="fwc" type="Real" array="False" size=""/>
+            <declare name="fc" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter Name: &quot;" newline="True"/>
+            <input variable="ln"/>
+            <output expression="&quot;Enter cost of Appliance: $&quot;" newline="True"/>
+            <input variable="coa"/>
+            <if expression="coa &gt; 1000.01">
+                <then>
+                    <assign variable="wc" expression="10 / 100"/>
+                </then>
+                <else>
+                    <assign variable="wc" expression="5 / 100"/>
+                </else>
+            </if>
+            <assign variable="fwc" expression="coa * wc"/>
+            <assign variable="fc" expression="coa + fwc"/>
+            <output expression="&quot;Name: &quot; &amp;ln" newline="True"/>
+            <output expression="&quot;Cost of Appliance: &quot; &amp;coa" newline="True"/>
+            <output expression="&quot;Cost of warranty: $&quot; &amp;fwc" newline="True"/>
+            <output expression="&quot;Total Cost: $&quot; &amp;fc" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
