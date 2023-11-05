@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PhotonUser"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-05 03:54:03 PM"/>
+        <attribute name="created" value="UGhvdG9uVXNlcjtFQzJBTUFaLTFIRzRCTUc7MjAyMy0xMS0wNTswMzozMzowMCBQTTszMzAw"/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLTFIRzRCTUc7MjAyMy0xMS0wNTswMzo1NDowMyBQTTsxOzM0MTQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="pn" type="Integer" array="False" size=""/>
+            <declare name="qty" type="Integer" array="False" size=""/>
+            <declare name="uc" type="Integer" array="False" size=""/>
+            <declare name="total" type="Integer" array="False" size=""/>
+            <input variable="pn"/>
+            <input variable="qty"/>
+            <if expression="pn = &quot;10&quot; or &quot;55&quot;">
+                <then>
+                    <assign variable="uc" expression="1"/>
+                </then>
+                <else>
+                    <if expression="pn = &quot;99&quot;">
+                        <then>
+                            <assign variable="uc" expression="2"/>
+                        </then>
+                        <else>
+                            <if expression="pn = &quot;80&quot; or &quot;70&quot;">
+                                <then>
+                                    <assign variable="uc" expression="3"/>
+                                </then>
+                                <else>
+                                    <assign variable="uc" expression="5"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <assign variable="total" expression="qty * uc"/>
+            <output expression="&quot;Part Number: &quot; &amp;pn" newline="True"/>
+            <output expression="&quot;Unit Cost: &quot; &amp;uc" newline="True"/>
+            <output expression="&quot;Total: &quot; &amp;total" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

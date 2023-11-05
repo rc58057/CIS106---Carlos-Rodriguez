@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PhotonUser"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-05 04:06:14 PM"/>
+        <attribute name="created" value="UGhvdG9uVXNlcjtFQzJBTUFaLTFIRzRCTUc7MjAyMy0xMS0wNTswMzozMzowMCBQTTszMzAw"/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLTFIRzRCTUc7MjAyMy0xMS0wNTswNDowNjoxNCBQTTsyOzM0MTU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="paoc" type="Integer" array="False" size=""/>
+            <declare name="yom" type="Integer" array="False" size=""/>
+            <declare name="rate" type="Integer" array="False" size=""/>
+            <declare name="fyi" type="Integer" array="False" size=""/>
+            <input variable="paoc"/>
+            <input variable="yom"/>
+            <if expression="paoc &lt; 100000 and yom == 5">
+                <then>
+                    <assign variable="rate" expression="6 / 100"/>
+                </then>
+                <else>
+                    <if expression="100000 &lt; paoc &lt; 50000 and yom == 10">
+                        <then>
+                            <assign variable="rate" expression="5 / 100"/>
+                        </then>
+                        <else>
+                            <if expression="100000 &lt; paoc &lt; 50000 and yom == 5">
+                                <then>
+                                    <assign variable="rate" expression="4 / 100"/>
+                                </then>
+                                <else>
+                                    <assign variable="rate" expression="2 / 100"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <assign variable="fyi" expression="paoc * rate"/>
+            <output expression="&quot;Principle:  &quot; &amp;paoc" newline="True"/>
+            <output expression="&quot;Interest Rate: &quot; &amp;rate" newline="True"/>
+            <output expression="&quot;Interest amount for first year: &quot; &amp;fyi" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

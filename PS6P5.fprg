@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PhotonUser"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-05 04:46:19 PM"/>
+        <attribute name="created" value="UGhvdG9uVXNlcjtFQzJBTUFaLTFIRzRCTUc7MjAyMy0xMS0wNTswMzozMzowMCBQTTszMzAw"/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLTFIRzRCTUc7MjAyMy0xMS0wNTswNDo0NjoxOSBQTTs0OzM0MjY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="elm" type="String" array="False" size=""/>
+            <declare name="sal" type="Integer" array="False" size=""/>
+            <declare name="jbl" type="Integer" array="False" size=""/>
+            <declare name="bonus" type="Integer" array="False" size=""/>
+            <input variable="elm"/>
+            <input variable="sal"/>
+            <input variable="jbl"/>
+            <if expression="jbl &gt; 10">
+                <then>
+                    <assign variable="bonus" expression="sal * 25/100"/>
+                </then>
+                <else>
+                    <if expression="9 &gt; jbl &gt; 5">
+                        <then>
+                            <assign variable="bonus" expression="sal * 20 / 100"/>
+                        </then>
+                        <else>
+                            <assign variable="bonus" expression="sal * 10 / 100"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="&quot;Employee: &quot; &amp;elm" newline="True"/>
+            <output expression="&quot;Bonus: $&quot; &amp;bonus" newline="True"/>
+            <output expression="&quot;total price: &quot; &amp;total" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
