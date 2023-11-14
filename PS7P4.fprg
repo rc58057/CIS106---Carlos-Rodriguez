@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PhotonUser"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-13 08:21:09 PM"/>
+        <attribute name="created" value="UGhvdG9uVXNlcjtFQzJBTUFaLUdUQVBQUE47MjAyMy0xMS0xMzswNzoxNzo1MSBQTTszMzkx"/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLUdUQVBQUE47MjAyMy0xMS0xMzswODoyMTowOSBQTTsxOzM0OTg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="response" type="String" array="False" size=""/>
+            <declare name="ln" type="String" array="False" size=""/>
+            <declare name="hw" type="Real" array="False" size=""/>
+            <declare name="rop" type="Real" array="False" size=""/>
+            <declare name="gp" type="Real" array="False" size=""/>
+            <declare name="noe" type="Integer" array="False" size=""/>
+            <assign variable="noe" expression="0"/>
+            <assign variable="gp" expression="0"/>
+            <output expression="&quot;Would you like to continue? (Yes or No)&quot;" newline="True"/>
+            <input variable="response"/>
+            <while expression="response = &quot;Yes&quot;">
+                <assign variable="noe" expression="noe + 1"/>
+                <output expression="&quot;Enter last name: &quot;" newline="True"/>
+                <input variable="ln"/>
+                <output expression="&quot;Enter hours worked: &quot;" newline="True"/>
+                <input variable="hw"/>
+                <output expression="&quot;Enter rate of pay: &quot;" newline="True"/>
+                <input variable="rop"/>
+                <if expression="hw &lt; 40">
+                    <then>
+                        <assign variable="rop" expression="rop * 1.5"/>
+                    </then>
+                    <else/>
+                </if>
+                <assign variable="gp" expression="rop * hw"/>
+                <assign variable="noe" expression="noe + 1"/>
+                <output expression="&quot;Employee: &quot; &amp;ln" newline="True"/>
+                <output expression="&quot;Gross pay: $&quot; &amp;gp" newline="True"/>
+                <output expression="&quot;Would you like to continue? (Yes or No)&quot;" newline="True"/>
+                <input variable="response"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

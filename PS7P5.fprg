@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PhotonUser"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-13 09:21:02 PM"/>
+        <attribute name="created" value="UGhvdG9uVXNlcjtFQzJBTUFaLUdUQVBQUE47MjAyMy0xMS0xMzswODozMzo1NiBQTTszMzk1"/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLUdUQVBQUE47MjAyMy0xMS0xMzswOToyMTowMiBQTTsxOzM0OTI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="response" type="String" array="False" size=""/>
+            <declare name="qty" type="Real" array="False" size=""/>
+            <declare name="price" type="Real" array="False" size=""/>
+            <declare name="ex" type="Real" array="False" size=""/>
+            <declare name="dis" type="Real" array="False" size=""/>
+            <declare name="da" type="Real" array="False" size=""/>
+            <declare name="total" type="Real" array="False" size=""/>
+            <output expression="&quot;Do you want to continue? (Yes or No)&quot;" newline="True"/>
+            <input variable="response"/>
+            <while expression="response = &quot;Yes&quot;">
+                <output expression="&quot;Enter Quantity: &quot;" newline="True"/>
+                <input variable="qty"/>
+                <output expression="&quot;Enter Price: $&quot;" newline="True"/>
+                <input variable="price"/>
+                <assign variable="ex" expression="qty * price"/>
+                <if expression="ex &gt; 10000">
+                    <then>
+                        <assign variable="dis" expression="25/100"/>
+                    </then>
+                    <else>
+                        <assign variable="dis" expression="10/100"/>
+                    </else>
+                </if>
+                <assign variable="da" expression="ex * dis"/>
+                <assign variable="total" expression="ex - da"/>
+                <output expression="&quot;Extended price: &quot; &amp;ex" newline="True"/>
+                <output expression="&quot;Discount amount: &quot; &amp;da" newline="True"/>
+                <output expression="&quot;Total: &quot; &amp;total" newline="True"/>
+                <output expression="&quot;Do you want to continue? (Yes or No)&quot;" newline="True"/>
+                <input variable="response"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

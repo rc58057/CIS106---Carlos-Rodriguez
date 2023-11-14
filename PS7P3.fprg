@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PhotonUser"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-14 12:32:55 PM"/>
+        <attribute name="created" value="UGhvdG9uVXNlcjtFQzJBTUFaLU85QUg2VkE7MjAyMy0xMS0xNDsxMjoxMTo1NCBQTTszMzI1"/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLU85QUg2VkE7MjAyMy0xMS0xNDsxMjozMjo1NSBQTTsyOzM0Mzg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="response" type="String" array="False" size=""/>
+            <declare name="ln" type="String" array="False" size=""/>
+            <declare name="ts1" type="Real" array="False" size=""/>
+            <declare name="ts2" type="Real" array="False" size=""/>
+            <declare name="avg" type="Real" array="False" size=""/>
+            <output expression="&quot;Would you like to continue? (Yes or No)&quot;" newline="True"/>
+            <input variable="response"/>
+            <while expression="response = &quot;Yes&quot;">
+                <output expression="&quot;Enter last name: &quot;" newline="True"/>
+                <input variable="ln"/>
+                <output expression="&quot;Enter test score 1: &quot;" newline="True"/>
+                <input variable="ts1"/>
+                <output expression="&quot;Enter test score 2: &quot;" newline="True"/>
+                <input variable="ts2"/>
+                <assign variable="avg" expression="ts1 / ts2 * 100"/>
+                <output expression="&quot;Last name: &quot; &amp;ln &amp; &quot;Test Average: &quot; &amp;avg" newline="True"/>
+                <output expression="&quot;Would you like to continue? (Yes or No)&quot;" newline="True"/>
+                <input variable="response"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
